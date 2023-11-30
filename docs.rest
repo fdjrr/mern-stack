@@ -1,0 +1,28 @@
+###
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/65682c5fd9e86b0bb2331e94
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ananda Maharani",
+    "email": "raniminimon@gmail.com",
+    "password": "password"
+}
+
+###
+PATCH http://localhost:5000/users/65682c5fd9e86b0bb2331e94
+Content-Type: application/json
+
+{
+    "name": "Ranot Senget",
+    "email": "raniminimon@gmail.com",
+    "password": "password"
+}
+
+###
+DELETE http://localhost:5000/users/65682c5fd9e86b0bb2331e94
